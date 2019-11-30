@@ -13,39 +13,39 @@
  */
 
 
-var rightSideView = function(root) {
+var rightSideView = function (root) {
     var outputArr = [];
-    
-    function getRightSideVal(node, depth){
-        if(!Array.isArray(outputArr[depth]) && (node.left || node.right)){
-                outputArr[depth] = [];
+
+    function getRightSideVal(node, depth) {
+        if (!Array.isArray(outputArr[depth]) && (node.left || node.right)) {
+            outputArr[depth] = [];
         }
-        
-        if(node.left){
+
+        if (node.left) {
             outputArr[depth].push(node.left.val);
-            getRightSideVal(node.left, depth+1);
+            getRightSideVal(node.left, depth + 1);
         }
-        if(node.right){
+        if (node.right) {
             outputArr[depth].push(node.right.val);
-            getRightSideVal(node.right, depth+1);
+            getRightSideVal(node.right, depth + 1);
         }
-        
-        
+
+
     }
-    
-    if(root){
+
+    if (root) {
         outputArr[0] = [];
         outputArr[0].push(root.val);
-        getRightSideVal(root,1);
-        
-        return outputArr.map(function(depthArr){
+        getRightSideVal(root, 1);
+
+        return outputArr.map(function (depthArr) {
             return depthArr.pop();
-        });  
-        
+        });
+
     } else {
         return [];
     }
-    
-    
-    
+
+
+
 };
