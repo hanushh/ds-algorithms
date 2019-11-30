@@ -19,10 +19,10 @@ var addTwoNumbers = function (l1, l2) {
 
     while (l1current || l2current || (carry > 0)) {
 
-        let l1value = (l1current && l1current.val) ? l1current.val : 0;
-        let l2value = (l2current && l2current.val) ? l2current.val : 0;
+        let l1v = (l1current && l1current.val) ? l1current.val : 0;
+        let l2v = (l2current && l2current.val) ? l2current.val : 0;
 
-        let sum = carry + l1valuealue + l2value;
+        let sum = carry + l1v + l2v;
         oc.val = sum % 10;
 
         carry = (sum > 9) ? (Math.floor(sum / 10)) : 0;
