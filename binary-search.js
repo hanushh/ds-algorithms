@@ -1,10 +1,12 @@
 class BinarySearch {
     constructor() {
 
-
         let arr = [2, 5, 6, 8, 11, 15, 19];
+
+        let searchTerm = 11;
         
-        console.log('Binary Search:', this.performBS(arr, 0, (arr.length - 1), 3));
+        console.log('Input:', arr, ' Search Term:', searchTerm);
+        console.log('Binary Search:', this.performBS(arr, 0, (arr.length - 1), searchTerm));
 
     }
 
