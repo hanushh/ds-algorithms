@@ -1,5 +1,9 @@
-class quicksort{
+class Quicksort{
 
-
+    constructor(){
+        
+    }
     
 }
+
+new Quicksort();
