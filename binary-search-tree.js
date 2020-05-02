@@ -1,16 +1,18 @@
 class Node {
-    right = null
-    left = null
-    data = null
+    // right = null
+    // left = null
+    // data = null
 
     constructor(data = null) {
+        this.right = null;
+        this.left= null;
         this.data = data;
     }
 
 }
 
 
-export default class BinarySearchTree {
+class BinarySearchTree {
     constructor() {
         this.root = new Node(1);
         this.insert(10, 20, 30, 25);
@@ -50,7 +52,7 @@ export default class BinarySearchTree {
         }
 
         this.printTreeInorder(current.left);
-        console.log(current);
+        console.log(current.data);
         this.printTreeInorder(current.right);
 
     }
@@ -60,4 +62,5 @@ export default class BinarySearchTree {
 const bst = new BinarySearchTree();
 
 
-bst.insert(10,5,15,3,7,null,18);
+// bst.insert(10,5,15,3,7,null,18);
+
