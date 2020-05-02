@@ -17,8 +17,8 @@ export default class BinarySearchTree {
         this.printTreeInorder(this.root);
     }
 
-    insert() {
-        [...arguments].forEach((data) => {
+    insert(...data) {
+        data.forEach((data) => {
             let newNode = new Node(data);
 
             this.insertRec(this.root, newNode);
@@ -57,4 +57,7 @@ export default class BinarySearchTree {
 }
 
 
-new BinarySearchTree();
+const bst = new BinarySearchTree();
+
+
+bst.insert(10,5,15,3,7,null,18);
