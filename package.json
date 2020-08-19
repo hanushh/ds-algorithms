@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "hnh": "^1.0.0",
     "promise.allsettled": "^1.0.2"
   }
 }
