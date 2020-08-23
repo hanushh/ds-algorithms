@@ -1,3 +1,4 @@
+const { PriorityQueue } = require('DataStructures/PriorityQueue.js')
 
 // The graph object
 const graph = {
