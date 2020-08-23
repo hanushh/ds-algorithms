@@ -8,6 +8,7 @@ PriorityQueue.prototype.items = [];
 
 PriorityQueue.prototype.enqueue = function (item, priority) {
     var qElement = new QElement(item, priority);
+    var contain = false;
 
     for (let i = 0; i < this.items.length; i++) {
         if (this.items[i].priority > qElement.priority) {
@@ -37,5 +38,26 @@ PriorityQueue.prototype.isEmpty = function () {
 }
 
 
+PriorityQueue.prototype.printQueue = function () {
 
-export function PriorityQueue() { }
+    console.log(this.items.map(item => item.element));
+}
+
+
+function PriorityQueue() { }
+
+module.exports = { PriorityQueue };
+
+// const priorityQueue = new PriorityQueue();
+
+// priorityQueue.enqueue('A', 1);
+
+// priorityQueue.enqueue('D', 4);
+
+// priorityQueue.enqueue('C', 3);
+
+// priorityQueue.enqueue('E', 5);
+
+// priorityQueue.enqueue('B', 2);
+
+// priorityQueue.printQueue();
