@@ -1,7 +1,7 @@
 ## The JavaScript Engine
 - Memory Heap — this is where the memory allocation happens
 - Call Stack — this is where your stack frames are as your code executes
-
+- Code Area - This is the area the JS code to be executed is stored
 
 https://blog.sessionstack.com/how-does-javascript-actually-work-part-1-b0bacc073cf
 

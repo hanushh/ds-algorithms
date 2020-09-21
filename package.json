@@ -4,12 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "next-dev": "next"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "hnh": "^1.0.0",
-    "promise.allsettled": "^1.0.2"
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "^9.5.3",
+    "promise.allsettled": "^1.0.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   }
 }
