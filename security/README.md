@@ -10,3 +10,12 @@ HTTPS works over TLS protocol.
 
 ## Phishing
 Phishing is the fraudulent attempt to obtain sensitive information such as usernames, passwords and credit card details by disguising oneself as a trustworthy entity in an electronic communication
+
+
+Popular Security Vulnerability 
+
+> SQL Injection
+> Encoding Vulnurability
+> XSS 
+
+
