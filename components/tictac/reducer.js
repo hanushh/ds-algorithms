@@ -1,5 +1,5 @@
 
-function minMaxAlgorithm(matrix){
+function miniMaxAlgorithm(matrix){
 
 
 
