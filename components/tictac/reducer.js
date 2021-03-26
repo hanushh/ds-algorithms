@@ -1,5 +1,8 @@
 function miniMaxAlgorithm(matrix) {
 
+    
+
+
 }
 function checkGameStatus(matrix) {
 
