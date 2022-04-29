@@ -1,19 +1,9 @@
-import React, { Component } from 'react'
-import UserContext from './UserContext'
+import React from 'react'
 
-export default class HomePage extends Component {
+const HomePage = () => {
 
-    static contextType = UserContext
 
-    componentDidMount() {
-        const user = this.context
+    return <span >t</span>
 
-        console.log(user) // { name: 'Tania', loggedIn: true }
-    }
-
-    render() {
-        const {user, setUser} = this.context
-        console.log(setUser)
-        return <span >{user?.name}</span>
-    }
 }
+export default HomePage;
